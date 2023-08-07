@@ -1,4 +1,4 @@
-name: API CI
+name: GitHub Actions Demo
 #on: [push] -> esto si es solo un proyecto, actualmente tenemos 3 proyectos distintos (api, demo, webapp)
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Setup Nodejs
         uses: actions/setup-node@v2
-        with:
+        with:git statu
           node-version: 18
           cache: 'npm'
           cache-dependency-path: ./api/package-lock.json
